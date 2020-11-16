@@ -19,11 +19,11 @@ jobs:
                 include:
                     - operating-system: ubuntu-latest
                       php-versions: '8.0'
-                      composer-args: '--ignore-platform-reqs'
+                      composer-args: '--ignore-platform-reqs --no-scripts'
                       allow-failure: true
                     - operating-system: ubuntu-latest
                       php-versions: '8.0'
-                      composer-args: '--prefer-lowest --ignore-platform-reqs'
+                      composer-args: '--prefer-lowest --ignore-platform-reqs --no-scripts'
                       allow-failure: true
         runs-on: ${{ matrix.operating-system }}
         continue-on-error: ${{ matrix.allow-failure }}
