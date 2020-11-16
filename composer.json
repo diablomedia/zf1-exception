@@ -27,10 +27,12 @@
         "phpstan/phpstan": "0.12.50",
         "friendsofphp/php-cs-fixer": "2.16.4",
         "maglnet/composer-require-checker": "^1.1.0 || ^2.0.0",
-        "phpro/grumphp": "^0.16.0"
+        "phpro/grumphp": "^1.1.0"
     },
     "archive": {
-        "exclude": ["/tests"]
+        "exclude": [
+            "/tests"
+        ]
     },
     "scripts": {
         "test": "phpunit ./tests",
