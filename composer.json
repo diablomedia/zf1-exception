@@ -27,7 +27,7 @@
         "phpstan/phpstan": "1.2.0",
         "friendsofphp/php-cs-fixer": "3.3.2",
         "maglnet/composer-require-checker": "^1.1.0 || ^2.0.0 || ^3.0.0",
-        "phpro/grumphp-shim": "^1.1"
+        "phpro/grumphp-shim": "^1.5.0"
     },
     "archive": {
         "exclude": [
