@@ -28,16 +28,10 @@
 class Zend_Exception extends Exception
 {
     /**
-     * @var null|Throwable
-     */
-    private $_previous = null;
-
-    /**
      * Construct the exception
      *
      * @param  string $msg
      * @param  int $code
-     * @param  Throwable|null $previous
      * @return void
      */
     public function __construct($msg = '', $code = 0, Throwable|null $previous = null)
@@ -79,6 +73,6 @@ class Zend_Exception extends Exception
      */
     protected function _getPrevious()
     {
-        return $this->_previous;
+        return parent::getPrevious();
     }
 }
