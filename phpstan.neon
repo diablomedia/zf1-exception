@@ -1,9 +1,10 @@
 parameters:
-    checkMissingIterableValueType: false
     level: 9
     paths:
         - ./
     excludePaths:
         - %rootDir%/../../../vendor/*
     ignoreErrors:
+        -
+            identifier: missingType.iterableValue
         - '#Parameter \#2 \$code of class Zend_Exception constructor expects int, string given\.#'
